@@ -16,7 +16,7 @@
             android:name=".Phone"
             android:exported="false" />
         <activity
-            android:name=".DangNhap"
+            android:name=".Home"
             android:exported="false" />
         <activity
             android:name=".Logout"
@@ -25,7 +25,7 @@
             android:name=".MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Home"
+            android:name=".DangNhap"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

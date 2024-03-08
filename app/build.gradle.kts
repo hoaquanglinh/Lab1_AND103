@@ -45,4 +45,7 @@ dependencies {
     implementation(platform("com.google.firebase:firebase-bom:32.7.3"))
     implementation("com.google.firebase:firebase-analytics")
     implementation("com.google.firebase:firebase-auth")
+    implementation("com.airbnb.android:lottie:3.7.0")
+
+    implementation("com.google.firebase:firebase-firestore")
 }

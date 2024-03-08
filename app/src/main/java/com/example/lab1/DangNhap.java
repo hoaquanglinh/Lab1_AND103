@@ -62,6 +62,13 @@ public class DangNhap extends AppCompatActivity {
             }
         });
 
+        findViewById(R.id.btndangnhapPhone).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(DangNhap.this, Phone.class));
+            }
+        });
+
         findViewById(R.id.btndangnhap).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -83,7 +90,7 @@ public class DangNhap extends AppCompatActivity {
 
                                     Toast.makeText(DangNhap.this, "Đăng nhập thành công", Toast.LENGTH_LONG).show();
 
-                                    Intent intent1 = new Intent(DangNhap.this, Logout.class);
+                                    Intent intent1 = new Intent(DangNhap.this, Home.class);
                                     startActivity(intent1);
                                 } else {
                                     Log.w("Main", "createUserWithEmail:failure", task.getException());
